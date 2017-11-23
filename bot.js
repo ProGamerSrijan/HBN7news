@@ -6,8 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'news') {
+    	message(
+            'The King has called for new elections after sacking the current PM. In other news: Yugoslavian armed riots.'
+        );
   	}
 });
 
